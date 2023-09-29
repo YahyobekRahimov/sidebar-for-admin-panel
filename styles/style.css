@@ -379,10 +379,38 @@ th {
   padding: 0;
 }
 
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2");
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -390,6 +418,183 @@ th {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.chevron-right-class::after {
+  content: "";
+  height: 4px;
+  width: 4px;
+  border: 3px solid #9197B3;
+  border-color: transparent #9197B3 #9197B3 transparent;
+  transform: rotateZ(-45deg);
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+
+.chevron-hover {
+  position: relative;
+}
+.chevron-hover:hover .chevron-right-class::after {
+  border-color: transparent #fff #fff transparent;
+}
+
+.panel {
+  padding: 36px 28px;
+  position: fixed;
+  background: #FFF;
+  box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  width: 306px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.panel__container .panel__main-part {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  margin-bottom: 64px;
+}
+.panel__container .panel__main-part span {
+  position: absolute;
+  right: -20px;
+  bottom: 7px;
+}
+
+h1 + span {
+  color: #838383;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+}
+
+.panel__nav {
+  width: 100%;
+}
+
+.panel__nav a {
+  color: #9197B3;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.14px;
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  padding: 11px;
+  align-items: center;
+  border-radius: 8px;
+}
+.panel__nav a:hover {
+  transition: all 0.2s ease-in;
+  background-color: #5932EA;
+  color: #fff;
+}
+.panel__nav a:hover img {
+  transition: all 0.2s ease-in;
+  filter: brightness(1000%);
+}
+
+.control {
+  margin-left: 336px;
+}
+
+.call-to-action {
+  border-radius: 20px;
+  background: linear-gradient(108deg, #EAABF0 7.37%, #4623E9 95.19%);
+  padding: 26px 23px 22px;
+  margin-bottom: 46px;
+}
+.call-to-action span {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.14px;
+}
+.call-to-action button {
+  margin-top: 30px;
+  padding: 10px 55px;
+  color: #4925E9;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.14px;
+  white-space: nowrap;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 4px 4px 0px rgba(79, 42, 234, 0.17);
+}
+.call-to-action button:hover {
+  background-color: #eeedf5;
+}
+
+.panel__admin a {
+  display: flex;
+  align-items: center;
+}
+.panel__admin a .admin__name {
+  display: flex;
+  flex-direction: column;
+  margin-right: 71px;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+.panel__admin a .admin__name .name {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.14px;
+}
+.panel__admin a .admin__name .job {
+  color: #757575;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    width: 102px;
+  }
+  .panel .chevron-down,
+  .panel .call-to-action,
+  .panel h1,
+  .panel span {
+    display: none;
+  }
+  .control {
+    margin-left: 122px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
