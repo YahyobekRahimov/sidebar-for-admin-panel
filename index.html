@@ -90,7 +90,9 @@
                 </section>
                 <section class="control__statistics-wrapper">
                     <div class="statistics-wrapper__block">
-                        <img src="./images/profile-2user.svg" alt="profile user">
+                        <div class="statistics__image">
+                            <img width="42" src="./images/profile-2user.svg" alt="profile user">
+                        </div>
                         <div class="statistics-wrapper__numbers">
                             <h3>Total customers</h3>
                             <span class="customer-number">
@@ -98,21 +100,22 @@
                             </span>
                             <p>
                                 <img src="./images/arrow-up-increase.svg" alt="increase">
-                                <span class="percentage-increase">16%</span>
-                                this month
+                                <span class="percentage-increase">16%</span> this month
                             </p>
                         </div>
                     </div>
                     <div class="vertical-line"></div>
                     <div class="statistics-wrapper__block">
-                        <img src="./images/profile-tick.svg alt=" alt="profile tick">
+                        <div class="statistics__image">
+                            <img src="./images/profile-tick.svg" alt="profile tick">
+                        </div>
                         <div class="statistics-wrapper__numbers">
                             <h3>Members</h3>
                             <span class="customer-number">
                                 1,893
                             </span>
                             <p>
-                                <img src="./images/arrow-up-increase.svg" alt="increase">
+                                <img src="./images/arrow-down-decrease.svg" alt="increase">
                                 <span class="percentage-decrease">1%</span>
                                 this month
                             </p>
@@ -120,7 +123,9 @@
                     </div>
                     <div class="vertical-line"></div>
                     <div class="statistics-wrapper__block">
-                        <img src="./images/monitor.svg" alt="monitor">
+                        <div class="statistics__image">
+                            <img src="./images/monitor.svg" alt="monitor">
+                        </div>
                         <div class="statistics-wrapper__numbers">
                             <h3>Active now</h3>
                             <span class="customer-number">
@@ -137,27 +142,33 @@
                     </div>
                 </section>
                 <section class="customers-info">
-                    <div class="customers-info__title-wrapper">
-                        <h2 class="customers-info__title">All Customers</h2>
-                        <span>Active Members</span>
+                    <div class="customers-info__first-part">
+                        <div class="customers-info__title-wrapper">
+                            <h2 class="customers-info__title">All Customers</h2>
+                            <span>Active Members</span>
+                        </div>
+                        <div class="title-wrapper__flex-container">
+                            <div class="customers-info__input-wrapper">
+                                <img src="./images/search.svg" alt="Search icon">
+                                <input type="text" placeholder="Search">
+                            </div>
+                            <button class="customers-info__search-filter">
+                                <span class="sort-by">Sort by :
+                                    <span class="search-filter__category">Newest</span>
+                                </span>
+                                <img width="18" src="./images/chevron-down.svg" alt="chevron down">
+                            </button>
+                        </div>
                     </div>
-                    <div class="customers-info__input-wrapper">
-                        <img src="./images/search.svg" alt="Search icon">
-                        <input type="text" placeholder="Search">
-                    </div>
-                    <button class="customers-info__search-filter">
-                        Sort by: <span>Newest</span>
-                        <img src="./images/chevron-down.svg" alt="chevron down">
-                    </button>
                     <table>
                         <thead>
                             <tr>
-                                <th>Customer name</th>
-                                <th>Company</th>
-                                <th>Phone Number</th>
-                                <th>Email</th>
-                                <th>Country</th>
-                                <th>Status</th>
+                                <td>Customer name</td>
+                                <td>Company</td>
+                                <td>Phone Number</td>
+                                <td>Email</td>
+                                <td>Country</td>
+                                <td><span class="status-data-cell">Status</span></td>
                             </tr>
                         </thead>
                         <tbody>
@@ -167,7 +178,7 @@
                                 <td>(225) 555-0118</td>
                                 <td>jane@microsoft.com</td>
                                 <td>United States</td>
-                                <td class="Active">Active</td>
+                                <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
                                 <td>Floyd Miles</td>
@@ -175,7 +186,7 @@
                                 <td>(205) 555-0100</td>
                                 <td>floyd@yahoo.com</td>
                                 <td>Kiribati</td>
-                                <td class="inactive">Inactive</td>
+                                <td><span class="inactive">Inactive</span></td>
                             </tr>
                             <tr>
                                 <td>Ronald Richards</td>
@@ -183,7 +194,7 @@
                                 <td>(302) 555-0107</td>
                                 <td>ronald@adobe.com</td>
                                 <td>Israel</td>
-                                <td class="inactive">Inactive</td>
+                                <td><span class="inactive">Inactive</span></td>
                             </tr>
                             <tr>
                                 <td>Marvin McKinney</td>
@@ -191,7 +202,7 @@
                                 <td>(252) 555-0126</td>
                                 <td>marvin@tesla.com</td>
                                 <td>Iran</td>
-                                <td class="active">Active</td>
+                                <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
                                 <td>Jerome Bell</td>
@@ -199,7 +210,7 @@
                                 <td>(629) 555-0129</td>
                                 <td>jerome@google.com</td>
                                 <td>Réunion</td>
-                                <td class="active">Active</td>
+                                <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
                                 <td>Kathryn Murphy</td>
@@ -207,7 +218,7 @@
                                 <td>(406) 555-0120</td>
                                 <td>kathryn@microsoft.com</td>
                                 <td>Curaçao</td>
-                                <td class="active">Active</td>
+                                <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
                                 <td>Jacob Jones</td>
@@ -215,7 +226,7 @@
                                 <td>(208) 555-0112</td>
                                 <td>jacob@yahoo.com</td>
                                 <td>Brazil</td>
-                                <td class="active">Active</td>
+                                <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
                                 <td>Kristin Watson</td>
@@ -223,21 +234,21 @@
                                 <td>(704) 555-0127</td>
                                 <td>kristin@facebook.com</td>
                                 <td>Åland Islands</td>
-                                <td class="inactive">Inactive</td>
+                                <td><span class="inactive">Inactive</span></td>
                             </tr>
                         </tbody>
                     </table>
                     <div class="customers-info__more-data">
                         <span>Showing data 1 to 8 of 256k entries</span>
                         <ul class="data-numbers">
-                            <li>&lt;</li>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
+                            <li><button>&lt;</button></li>
+                            <li><button>1</button></li>
+                            <li><button>2</button></li>
+                            <li><button>3</button></li>
+                            <li><button>4</button></li>
                             <li>...</li>
-                            <li>40</li>
-                            <li>&gt;</li>
+                            <li><button>40</button></li>
+                            <li><button>&gt;</button></li>
                         </ul>
                     </div>
                 </section>

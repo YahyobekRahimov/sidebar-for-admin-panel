@@ -2,8 +2,9 @@
 
 $clr-text-black-900: #000;
 $clr-text-black-800: #292D32;
-$clr-text-black-700: #3D3C42;
-$clr-text-black-600: #404B52;
+$clr-text-black-700: #333;
+$clr-text-black-600: #3D3C42;
+$clr-text-black-500: #404B52;
 
 $clr-text-gray-900: #3D3C42;
 $clr-text-gray-800: #757575;    
@@ -49,7 +50,10 @@ $clr-bg-red-900: #FFC5C5;
 // Font size
 
 $fs-h1: 1.625rem; // 26px
+$fs-32px: 2rem;
 $fs-26px: 1.625rem;
+$fs-24px: 1.5rem;
+$fs-22px: 1.375rem;
 $fs-14px: 0.875rem;
 $fs-12px: 0.75rem; 
 $fs-10px: 0.625rem;
@@ -59,5 +63,40 @@ $fs-10px: 0.625rem;
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-semibold: 600;
+$fw-bold: 700;
 
-$panel-width: 306px
+$panel-width: 306px;
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
