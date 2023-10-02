@@ -1,15 +1,31 @@
 // Color for texts
 
 $clr-text-black-900: #000;
+$clr-text-black-800: #292D32;
+$clr-text-black-700: #3D3C42;
+$clr-text-black-600: #404B52;
 
-$clr-text-gray-900: #757575;
-$clr-text-gray-800: #838383;
-$clr-text-gray-700: #9197B3;
+$clr-text-gray-900: #3D3C42;
+$clr-text-gray-800: #757575;    
+$clr-text-gray-700: #838383;
+$clr-text-gray-600: #9197B3;
+$clr-text-gray-500: #ACACAC;
+$clr-text-gray-400: #B5B7C0;
+
 
 $clr-text-white-900: #fff;
 
 $clr-text-blue-900: #5932EA;
 $clr-text-blue-800: #4925E9;
+
+$clr-text-green-900: #008767;
+$clr-text-green-800: #00AC4F;
+$clr-text-green-700: #00B087;
+$clr-text-green-600: #16C098;
+
+$clr-text-red-900: #D0004B;
+$clr-text-red-800: #DF0404;
+
 
 $clr-filter-white-900: brightness(1000%);
 
@@ -21,11 +37,15 @@ $clr-bg-gray-900: #757575;
 $clr-bg-gray-800: #838383;
 $clr-bg-gray-700: #9197B3;
 
+$clr-bg-green-900: rgba(22, 192, 152, 0.38);
+$clr-bg-green-800: #FAFBFF;
+
 $clr-bg-white-900: #fff;
 
 $clr-bg-blue-900: #5932EA;
 $clr-bg-blue-800: #4925E9;
 
+$clr-bg-red-900: #FFC5C5;
 // Font size
 
 $fs-h1: 1.625rem; // 26px

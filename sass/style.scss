@@ -7,8 +7,8 @@
     content: '';
     height: 4px;
     width: 4px;
-    border: 3px solid $clr-text-gray-700;
-    border-color: transparent $clr-text-gray-700 $clr-text-gray-700 transparent;
+    border: 3px solid $clr-text-gray-600;
+    border-color: transparent $clr-text-gray-600 $clr-text-gray-600 transparent;
     transform: rotateZ(-45deg);
     position: absolute;
     right: 15px;
@@ -62,7 +62,7 @@
 }
 
 h1 + span {
-    color: $clr-text-gray-800;
+    color: $clr-text-gray-700;
     font-size: $fs-10px;
     font-weight: $fw-medium;
     letter-spacing: -0.1px;
@@ -73,7 +73,7 @@ h1 + span {
 }
 
 .panel__nav a {
-    color: $clr-text-gray-700;
+    color: $clr-text-gray-600;
     font-size: $fs-14px;
     font-weight: $fw-medium;
     letter-spacing: -0.14px;
@@ -147,7 +147,7 @@ h1 + span {
             letter-spacing: 0.14px;
         }
         .job {
-            color: $clr-text-gray-900;
+            color: $clr-text-gray-800;
             font-size: $fs-12px;
             font-weight: $fw-regular;
             letter-spacing: 0.12px;
